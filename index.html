@@ -74,7 +74,7 @@
       }
       .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url('assets/images/bg_camion.png');
+          url('assets/images/bg_camion_optimized.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -85,6 +85,15 @@
       select:focus {
         border-color: #dc2626;
         outline: none;
+      }
+      .hero-image {
+        opacity: 0;
+        transform: scale(1.05);
+        transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+      }
+      .hero-image.loaded {
+        opacity: 1;
+        transform: scale(1);
       }
     </style>
   </head>
@@ -815,9 +824,10 @@
         </div>
         <hr class="border-gray-700 my-8" />
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-gray-400 text-sm">&copy; 2018 Liv&Pass Transports. Tous droits réservés.</p>
+          <p class="text-gray-400 text-sm">
+            &copy; 2018 Liv&Pass Transports. Tous droits réservés.
+          </p>
           <div class="flex space-x-4 mt-4 md:mt-0">
-            
             <a
               href="https://www.linkedin.com/in/abdelhakim-echarki-a527391b3/"
               class="text-gray-400 hover:text-brand transition-colors"
@@ -893,5 +903,14 @@
         }
       });
     </script>
+    <script>
+      window.addEventListener("load", () => {
+        const hero = document.querySelector(".hero-image");
+        if (hero) {
+          hero.classList.add("loaded");
+        }
+      });
+    </script>
+    
   </body>
 </html>
