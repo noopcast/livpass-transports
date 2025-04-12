@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Liv&Pass Transports - Transport de marchandises et personnes à Brest</title>
+    <meta
+      name="description"
+      content="Liv&Pass Transports, service professionnel de transport de marchandises légères et de personnes à Brest. Disponible 24/7 avec plus de 20 ans d'expérience."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .section {
+        padding: 4rem 1rem;
+      }
+      .nav-link:hover {
+        color: #dc2626;
+        transition: all 0.3s ease;
+      }
+      .bg-brand {
+        background-color: #dc2626;
+      }
+      .text-brand {
+        color: #dc2626;
+      }
+      .border-brand {
+        border-color: #dc2626;
+      }
+      .btn-brand {
+        background-color: #dc2626;
+        color: white;
+        transition: all 0.3s ease;
+      }
+      .btn-brand:hover {
+        background-color: #b91c1c;
+        transform: translateY(-2px);
+      }
+      .service-card {
+        transition: all 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      .gallery-img {
+        transition: all 0.3s ease;
+      }
+      .gallery-img:hover {
+        transform: scale(1.05);
+      }
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-3px);
+      }
+      .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('assets/images/bg_camion.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: #dc2626;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <span class="text-2xl font-bold text-brand">Liv&Pass</span>
+            <span class="ml-1 text-xl font-light">Transports</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#accueil"
+              class="nav-link font-medium"
+              >Accueil</a
+            >
+            <a
+              href="#a-propos"
+              class="nav-link font-medium"
+              >À propos</a
+            >
+            <a
+              href="#services"
+              class="nav-link font-medium"
+              >Services</a
+            >
+            <a
+              href="#galerie"
+              class="nav-link font-medium"
+              >Galerie</a
+            >
+            <a
+              href="#temoignages"
+              class="nav-link font-medium"
+              >Témoignages</a
+            >
+            <a
+              href="#contact"
+              class="nav-link font-medium"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              id="menu-toggle"
+              class="text-brand"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white w-full shadow-md"
+      >
+        <div class="container mx-auto px-4 py-3 space-y-3">
+          <a
+            href="#accueil"
+            class="block nav-link py-2"
+            >Accueil</a
+          >
+          <a
+            href="#a-propos"
+            class="block nav-link py-2"
+            >À propos</a
+          >
+          <a
+            href="#services"
+            class="block nav-link py-2"
+            >Services</a
+          >
+          <a
+            href="#galerie"
+            class="block nav-link py-2"
+            >Galerie</a
+          >
+          <a
+            href="#temoignages"
+            class="block nav-link py-2"
+            >Témoignages</a
+          >
+          <a
+            href="#contact"
+            class="block nav-link py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section / Accueil -->
+    <section
+      id="accueil"
+      class="hero-image flex items-center justify-center text-center text-white"
+    >
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          Transport professionnel à Brest
+        </h1>
+        <p class="text-xl md:text-2xl mb-8">
+          Livraison de marchandises et transport de personnes disponible 24/7
+        </p>
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+          <a
+            href="#services"
+            class="btn-brand py-3 px-6 rounded-lg font-medium"
+            >Nos services</a
+          >
+          <a
+            href="#contact"
+            class="bg-white text-brand py-3 px-6 rounded-lg font-medium hover:bg-gray-100 transition-all"
+            >Nous contacter</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section
+      id="a-propos"
+      class="section bg-gray-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">À propos de nous</h2>
+          <div class="w-24 h-1 bg-brand mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img
+              src="assets/images/flotte.png"
+              alt="Notre équipe"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="md:w-1/2 md:pl-10">
+            <h3 class="text-2xl font-semibold mb-4">Liv&Pass Transports</h3>
+            <p class="text-gray-700 mb-4">
+              Depuis plus de 20 ans, Liv&Pass Transports offre des services de transport de qualité
+              à Brest et dans toute la Bretagne. Notre entreprise s'est construite sur des valeurs
+              fortes : fiabilité, ponctualité et professionnalisme.
+            </p>
+            <p class="text-gray-700 mb-6">
+              Notre équipe expérimentée et passionnée est engagée à fournir un service irréprochable
+              pour tous vos besoins de transport, qu'il s'agisse de marchandises ou de personnes.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <i class="fas fa-calendar-check text-3xl text-brand mb-2"></i>
+                <h4 class="font-semibold">10+ ans</h4>
+                <p class="text-sm text-gray-600">d'expérience</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <i class="fas fa-clock text-3xl text-brand mb-2"></i>
+                <h4 class="font-semibold">24/7</h4>
+                <p class="text-sm text-gray-600">disponibilité</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <i class="fas fa-box text-3xl text-brand mb-2"></i>
+                <h4 class="font-semibold">Livraison fiable</h4>
+                <p class="text-sm text-gray-600">Colis pris en charge avec soin</p>
+              </div>
+
+              <div class="bg-white p-4 rounded-lg shadow text-center">
+                <i class="fas fa-car text-3xl text-brand mb-2"></i>
+                <h4 class="font-semibold">VTC</h4>
+                <p class="text-sm text-gray-600">service premium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section
+      id="services"
+      class="section"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Nos Services</h2>
+          <div class="w-24 h-1 bg-brand mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+            Nous proposons une gamme complète de services de transport adaptés à vos besoins
+            spécifiques.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Transport de marchandises légères -->
+          <div
+            class="bg-white border-2 border-red-600 text-red-600 rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="h-48 flex items-center justify-center p-6">
+              <i class="fas fa-truck text-6xl"></i>
+            </div>
+            <div class="p-6 text-gray-700">
+              <h3 class="text-xl font-semibold mb-2">Transport de marchandises légères</h3>
+              <p class="mb-4">
+                Transport professionnel de marchandises ≤ 3,5 tonnes avec véhicules adaptés.
+              </p>
+              <ul class="mb-4">
+                <li class="flex items-center mb-2">
+                  <i class="fas fa-check text-brand mr-2"></i> Kangoo (6-7m³)
+                </li>
+                <li class="flex items-center mb-2">
+                  <i class="fas fa-check text-brand mr-2"></i> Fourgons (10-12m³)
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-brand mr-2"></i> Camions (20-30m³)
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="inline-block btn-brand py-2 px-4 rounded-lg text-sm font-medium"
+              >
+                Demander un devis
+              </a>
+            </div>
+          </div>
+
+          <!-- Transport de personnes -->
+          <div
+            class="bg-white border-2 border-red-600 text-red-600 rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="h-48 flex items-center justify-center p-6">
+              <i class="fas fa-users text-6xl"></i>
+            </div>
+            <div class="p-6 text-gray-700">
+              <h3 class="text-xl font-semibold mb-2">Transport de personnes</h3>
+              <p class="mb-4">Transport confortable pour groupes jusqu'à 9 personnes.</p>
+              <ul class="mb-4">
+                <li class="flex items-center mb-2">
+                  <i class="fas fa-check text-brand mr-2"></i> Van Mercedes ou équivalent
+                </li>
+                <li class="flex items-center mb-2">
+                  <i class="fas fa-check text-brand mr-2"></i> Jusqu'à 9 personnes
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-brand mr-2"></i> Confort et sécurité
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="inline-block btn-brand py-2 px-4 rounded-lg text-sm font-medium"
+              >
+                Réserver maintenant
+              </a>
+            </div>
+          </div>
+
+          <!-- VTC Premium -->
+          <div
+            class="bg-white border-2 border-red-600 text-red-600 rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="h-48 flex items-center justify-center p-6">
+              <i class="fas fa-car-side text-6xl"></i>
+            </div>
+            <div class="p-6 text-gray-700">
+              <h3 class="text-xl font-semibold mb-2">Service VTC Premium</h3>
+              <p class="mb-4">Transport privé haut de gamme avec chauffeur professionnel.</p>
+              <ul class="mb-4">
+                <li class="flex items-center mb-2">
+                  <i class="fas fa-check text-brand mr-2"></i> Mercedes Classe C ou équivalent
+                </li>
+                <li class="flex items-center mb-2">
+                  <i class="fas fa-check text-brand mr-2"></i> Chauffeur professionnel
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-brand mr-2"></i> Service personnalisé
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="inline-block btn-brand py-2 px-4 rounded-lg text-sm font-medium"
+              >
+                Réserver votre VTC
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie photos -->
+    <section
+      id="galerie"
+      class="section bg-gray-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Notre flotte</h2>
+          <div class="w-24 h-1 bg-brand mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+            Découvrez notre gamme de véhicules adaptés à tous vos besoins de transport.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+            <img
+              src="assets/images/transport_personnes_1.png"
+              alt="Van Mercedes"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold">Van Mercedes</h3>
+              <p class="text-sm text-gray-600">Transport jusqu'à 9 personnes</p>
+            </div>
+          </div>
+          <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+            <img
+              src="assets/images/transport_personnes.png"
+              alt="Intérieur van"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold">Intérieur confortable</h3>
+              <p class="text-sm text-gray-600">Aménagement premium</p>
+            </div>
+          </div>
+          <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+            <img
+              src="assets/images/mercedes_C.png"
+              alt="Mercedes Classe C"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold">Mercedes Classe C</h3>
+              <p class="text-sm text-gray-600">Service VTC premium</p>
+            </div>
+          </div>
+          <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+            <img
+              src="assets/images/vito.png"
+              alt="Vito"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold">Type Vito</h3>
+              <p class="text-sm text-gray-600">6-7 m³ pour livraisons légères</p>
+            </div>
+          </div>
+          <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+            <img
+              src="assets/images/10m3.png"
+              alt="Fourgon intermédiaire"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold">Fourgon intermédiaire</h3>
+              <p class="text-sm text-gray-600">10-12 m³ de capacité</p>
+            </div>
+          </div>
+          <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+            <img
+              src="assets/images/20m3.png"
+              alt="Camion grand volume"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="font-semibold">Camion grand volume</h3>
+              <p class="text-sm text-gray-600">20-30 m³ pour charges importantes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section
+      id="temoignages"
+      class="section"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Ce que disent nos clients</h2>
+          <div class="w-24 h-1 bg-brand mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "Service impeccable pour notre déménagement. Chauffeur ponctuel et très professionnel.
+              Nos meubles ont été manipulés avec soin. Je recommande vivement Liv&Pass Transports."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                <span class="text-xl font-bold text-gray-600">M</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Julie Bernard</h4>
+                <p class="text-sm text-gray-600">13/09/2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "Liv&Pass a su répondre à nos exigences avec efficacité. Leur réactivité et leur
+              sérieux font vraiment la différence au quotidien. Un service sur lequel nous pouvons
+              compter."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                <span class="text-xl font-bold text-gray-600">M</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Marc Dupuis</h4>
+                <p class="text-sm text-gray-600">11/02/2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "J'ai utilisé leur service VTC pour un rendez-vous professionnel important. Véhicule
+              luxueux, chauffeur courtois et ponctuel. Une expérience à la hauteur de mes attentes."
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                <span class="text-xl font-bold text-gray-600">T</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Thomas Moreau</h4>
+                <p class="text-sm text-gray-600">16/03/2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="section bg-gray-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-2">Contactez-nous</h2>
+          <div class="w-24 h-1 bg-brand mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+            Besoin d'un devis ou d'informations complémentaires ? N'hésitez pas à nous contacter.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="md:w-1/2">
+            <form
+              id="contact-form"
+              class="bg-white p-6 rounded-lg shadow-lg"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label
+                    for="nom"
+                    class="block text-gray-700 mb-2"
+                    >Nom*</label
+                  >
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    required
+                    class="w-full px-4 py-2 border rounded-lg focus:border-brand"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="prenom"
+                    class="block text-gray-700 mb-2"
+                    >Prénom*</label
+                  >
+                  <input
+                    type="text"
+                    id="prenom"
+                    name="prenom"
+                    required
+                    class="w-full px-4 py-2 border rounded-lg focus:border-brand"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-gray-700 mb-2"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-2 border rounded-lg focus:border-brand"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="telephone"
+                    class="block text-gray-700 mb-2"
+                    >Téléphone*</label
+                  >
+                  <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    required
+                    class="w-full px-4 py-2 border rounded-lg focus:border-brand"
+                  />
+                </div>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="service"
+                  class="block text-gray-700 mb-2"
+                  >Service demandé*</label
+                >
+                <select
+                  id="service"
+                  name="service"
+                  required
+                  class="w-full px-4 py-2 border rounded-lg focus:border-brand"
+                >
+                  <option value="">Sélectionnez un service</option>
+                  <option value="marchandises">Transport de marchandises</option>
+                  <option value="personnes">Transport de personnes</option>
+                  <option value="vtc">Service VTC</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-gray-700 mb-2"
+                  >Message*</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full px-4 py-2 border rounded-lg focus:border-brand"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn-brand py-3 px-6 rounded-lg font-medium w-full"
+              >
+                Envoyer
+              </button>
+              <p class="text-sm text-gray-600 mt-2">* Champs obligatoires</p>
+            </form>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+              <h3 class="text-xl font-semibold mb-4">Informations pratiques</h3>
+              <div class="flex items-start mb-4">
+                <i class="fas fa-map-marker-alt text-brand mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-medium">Adresse</h4>
+                  <p class="text-gray-700">30 rue du Vercors, 29200 Brest</p>
+                </div>
+              </div>
+              <div class="flex items-start mb-4">
+                <i class="fas fa-phone-alt text-brand mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-medium">Téléphone</h4>
+                  <p class="text-gray-700">06 76 55 59 89</p>
+                </div>
+              </div>
+              <div class="flex items-start mb-4">
+                <i class="fas fa-envelope text-brand mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-medium">Email</h4>
+                  <p class="text-gray-700">contact@livpass-transports.fr</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-clock text-brand mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-medium">Horaires</h4>
+                  <p class="text-gray-700">
+                    Lundi au Vendredi : 8h00 - 19h00<br />Service d'urgence disponible 24/7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="h-64 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42440.93773308336!2d-4.5167735755615234!3d48.40051400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816bbf4c8908501%3A0x291e31fbfb43a18!2sBrest%2C%20France!5e0!3m2!1sfr!2sfr!4v1615554965962!5m2!1sfr!2sfr"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl font-bold text-brand">Liv&Pass</span>
+              <span class="ml-1 text-xl font-light">Transports</span>
+            </div>
+            <p class="text-gray-400 max-w-xs">
+              Transport professionnel de marchandises et de personnes à Brest et dans toute la
+              Bretagne.
+            </p>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#accueil"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#a-propos"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#galerie"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Galerie</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-lg font-semibold mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Transport de marchandises</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Transport de personnes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Service VTC</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt text-brand mr-2"></i>
+                <span class="text-gray-400">30 rue du Vercors, 29200 Brest</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt text-brand mr-2"></i>
+                <span class="text-gray-400">06 76 55 59 89</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-brand mr-2"></i>
+                <span class="text-gray-400">contact@livpass-transports.fr</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-gray-700 my-8" />
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm">&copy; 2018 Liv&Pass Transports. Tous droits réservés.</p>
+          <div class="flex space-x-4 mt-4 md:mt-0">
+            
+            <a
+              href="https://www.linkedin.com/in/abdelhakim-echarki-a527391b3/"
+              class="text-gray-400 hover:text-brand transition-colors"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Smooth scrolling for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            // Close mobile menu if open
+            document.getElementById('mobile-menu').classList.add('hidden');
+
+            // Scroll to target
+            window.scrollTo({
+              top: targetElement.offsetTop - 80, // Adjust for fixed header
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+
+      // Form submission handler
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = {
+          nom: document.getElementById('nom').value,
+          prenom: document.getElementById('prenom').value,
+          email: document.getElementById('email').value,
+          telephone: document.getElementById('telephone').value,
+          service: document.getElementById('service').value,
+          message: document.getElementById('message').value,
+        };
+
+        // Here you would typically send the data to your backend or EmailJS
+        // For demonstration, we'll just show an alert
+        alert('Merci pour votre message ! Nous vous contacterons dans les plus brefs délais.');
+
+        // Reset form
+        this.reset();
+      });
+
+      // Scroll reveal animation
+      window.addEventListener('scroll', function () {
+        const reveals = document.querySelectorAll('.service-card, .gallery-img, .testimonial-card');
+
+        for (let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const elementTop = reveals[i].getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('animate__animated', 'animate__fadeInUp');
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
