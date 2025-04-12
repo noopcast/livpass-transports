@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.livpass-transports.fr/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.livpass-transports.fr/#a-propos</loc>
+  </url>
+  <url>
+    <loc>https://www.livpass-transports.fr/#services</loc>
+  </url>
+  <url>
+    <loc>https://www.livpass-transports.fr/#galerie</loc>
+  </url>
+  <url>
+    <loc>https://www.livpass-transports.fr/#temoignages</loc>
+  </url>
+  <url>
+    <loc>https://www.livpass-transports.fr/#contact</loc>
+  </url>
+</urlset>
